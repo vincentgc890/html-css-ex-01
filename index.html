@@ -1,0 +1,247 @@
+<!-- agar browser dapat merender dengan benar, perlu ditentukan doctype yang digunakan -->
+
+<!-- buatlah element html -->
+
+<!-- 
+    suatu html harus memiliki bagian head untuk menyimpan metadata
+    dan informasi yang dapat dibaca oleh mesin
+    - buatlah element head
+    - tambahkan element meta di dalam head dengan property charset dan value "utf=8"
+    - agar suatu halaman memiliki judul, kita memerlukan element title
+    - isi judul/title page dengan "ngoding itu ga sulit"
+-->
+
+<!-- 
+    element body memuat segala informasi yang terlihat/visible pada browser
+ -->
+	
+<!-- 
+    kita akan membuat menu navigasi dengan element nav <nav>
+    did dalam element nav, kita akan menggunakan unordered list <ul>
+    setiap menu navigasi merupakan list item <li>
+    - kita akan membuat 4 list item, isilah konten dari tiap-tiap menu dengan
+      hello, course, about, contact
+    - pada setiap konten di list item, buatlah sebagai link <a>
+    - pada tiap link, diberikan properti href dengan value #sesuaiKonten, misal <a href="#hello">
+    sampai di sini kita memiliki menu navigasi dengan 4 link
+ -->
+
+<!-- 
+    untuk menampung konten pada halaman, ada baiknya menggunakan suatu div
+    div ini berfungsi sebagai wrapper utama pada konten
+    - kita akan membuat div dengan nama class "container" dan id "wrapper"
+ -->
+
+<!-- 
+    di dalam .container, kita akan mengisinya dengan 4 element div
+    - element pertama diberikan id "hello"
+    - element kedua diberikan id "course"
+    - element ketiga diberikan id "about"
+    - element keempat diberikan id "contact"
+ -->
+<!--
+    div#hello berfungsi sebagai semacam banner utama pada halaman web
+    - di dalam div#hello, kita akan membuat sebuah element div dengan class="banner"
+    - di dalam div.banner, terdapat element img
+	- properti src pada img merujuk pada folder assets/banner.jpg
+	- beri keterangan img dengan menggunakan properti alt dan isi dengan "gambar latar"
+    - selain img, div.banner juga memiliki element header <h1>
+      header biasanya digunakan sebagai judul representatif halaman
+      dengan isi "ngoding itu gak susah"
+    - dan sebuah element small <small> setelah header
+      dengan isi "*perlu dibiasakan aja"
+-->
+
+<!-- 
+    div#course kita akan fungsikan sebagai etalase yang menampilkan
+    (anggap saja) course yang sudah selesai diikutin selama kuliah
+	- di dalam div#course, ada header <h2> berisi "Course yang telah diselesaikan"
+	- di dalam div#course, kita akan membuat tiga element article <article>
+    - pada article pertama
+      terdapat element header h3 dengan isi "machine learning"
+      dan element paragraph dengan isi "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!"
+    - pada article kedua
+      terdapat element header h3 dengan isi "predictive analysis"
+      dan element paragraph dengan isi "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam."
+    - pada article ketiga
+      terdapat element header h3 dengan isi "inclusive design pattern"
+      dan element paragraph dengan isi "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?"
+ -->
+
+<!-- 
+	div#about difungsikan untuk menampilkan informasi tentang personil atau perusahaan
+	- di dalam div#about, ada header <h2> berisi "Tentang saya"
+	- ada span <span> yang berisi nama dan NIM, contoh: John Doe, 18189900
+	- terdapat paragraph yang menceritakan tentang mahasiswa
+		(silahkan dielaborasi sendiri, ceritakan saja tentang ketrampilan yang dimiliki,
+		lahir di mana, apa yang pernah dan sedang dikerjakan)
+	  minimal 200 character
+	pada bagian ini, kita juga akan menampilkan email, no contact, dan alamat
+	( pada bagian ini, tidak perlu menggunakan informasi yang sebenarnya,
+	tetapi harus mengikuti format sesuai dengan sebenarnya, misal:
+	johndoe@gmail.com, mobile: +81 123 xxxx xxx)
+	- terdapat header <h2> berisi "hubungi saya"
+	- terdapat 3 elemen span, dengan masing-masing berisi email, no contact, dan alamat
+-->
+
+<!-- 
+	div#contact berisi form untuk menghubungi perusahaan atau personil
+	- di dalam div#contact terdapat header <h2> berisi "kirim pesan ke saya"
+	pada bagian ini, buatlah form dengan metode POST
+	- di dalam form terdapat
+	- ada input text dengan id dan name "nama" dan label yang sesuai dengan inputnya
+	- ada input email dengan id dan name "email" dan label yang sesuai dengan input tersebut
+	- ada textarea dengan id dan name "message" dan label yang sesuai dengan input tersebut
+	- dan button dengan tulisan "kirim"
+-->
+
+<!--
+	di bagian footer, ada element footer <footer>
+	dalam footer terdapat sebuah element paragraph yang berisi
+	"copyright hari ini, sebuah pencapaian kecil"
+-->
+
+
+
+
+<!-- SIIIP!! konten dasar dari HTML telah berhasil dibuat -->
+<!-- namun untuk pencitraan, perlu tampilan yang rapi dan estetis -->
+<!-- 
+	semua instruksi di bawah ini adalah tidak lagi berurutan, kita akan mulai 
+	merapikan konten pada body supaya enak dilihat.
+	apabila ada yang tidak bisa dikerjakan, maka ada baiknya ditandai dulu dan
+	move on keinstruksi berikutnya, setelah itu baru kembali mengerjakannya
+	apabila sudah	menyelesaikan yang lain.
+-->
+<!--
+	pada body, font-family akan menggunakan "century gothic" dengan fallback
+	font pada "segoe UI", Tahoma, dan Geneva
+-->
+<!-- kemudian kita akan mulai dari nav menu -->
+<!-- 
+	list item memiliki bullet pada sebelah kirinya, untuk menghilangkannya,
+	kita menggunakan properti "list-style" dengan value "none"
+-->
+<!--
+	agar list item tersusun sejajar, kita perlu mengubah properti display
+	menjadi inline-block, dan memberi padding kiri dan kanan sebesar 16px
+	dan atas bawah sebesar 8px
+-->
+<!--
+	agar susunan menu terdapat di tengah halaman, properti text-align diubah
+	menjadi "center" pada element nav
+-->
+<!--
+	supaya menu itu tetap berada di posisi atas layar meski layar sudah discroll,
+	properti position diubah menjadi "fixed" dengan top "0" dan width "100%"
+-->
+<!--
+	perlu disadari bahwa terdapat default margin dan padding pada element ul,
+	agar design menjadi lebih baik, nilai properti margin dan paddingnya perlu
+	untuk di-nol-kan.
+-->
+
+<!--
+	kita akan membatasi div.container menjadi maksimal 840px  dan menempati tengah
+	halaman, agar tidak melewati 840px, kita akan membatasi dengan memberi
+	properti max-width, dan kemudian memberi margin "auto" pada sisi kiri dan
+	sisi kanan div.container
+-->
+
+<!--
+	pada div#hello, ubah proerti height menjadi "480px", ini untuk mengatur
+	tinggi div ini menjadi 480px 
+	dan	background-color "deepskyblue" - di mana apabila ada wilayah yang tidak
+	tercover oleh img, maka akan kelihatan warna biru langit.
+-->
+<!--
+	Apbila diperhatikan, sepertinya gambar keluar dari wilayah banner. 
+	agar tampilan tidak semrawut, properti overflow pada banner kita set sebagai "hidden".
+	kemudian tinggi dari banner harus dinyatakan bahwa menempati 100% dari element parent-nya
+-->
+<!--
+	element small pada banner perlu diset posisinya menjadi absolute, dan diposisikan
+	kiri dan bawahnya pada 16px.
+	agar posisi absolute itu berada pada lingkup wilayah .banner, maka banner harus
+	diposisikan secara "relative"
+	agar warna dapat terlihat sedikit kontras dengan gambar, kita akan menggunakan
+	warna "ghostwhite" pada tulisan element small
+	supaya dikenali pada browser sebagai layer yang lebih tinggi, properti z-index
+	diatur lebih tinggi daripada banner.
+-->
+<!--
+	setelah pengaturan z-index, menu pada beberapa versi browser bisa saja tertimpa atau hilang
+	di belakang banner, ubah juga properti z-index pada menu agar di atas banner.
+-->
+<!-- 
+	header h1 pada banner, akan kita tampilkan dengan warna putih dan latar hitam
+	dengan opacity 70%, atur padding sebesar 16px pada atas bawah, 32px pada kiri kanan
+	dan hanya menutupi pas sampai tulisannya, untuk itu
+	properti display diatur menggunakan "inline-block"
+	posisi diatur absolute, dengan jarak 60px dari bawah banner.
+ -->
+
+<!--
+	agar semua judul header <h2> di dalam #wrapper berada di tengah, kita akan
+	menunjuk pada #wrapper h2 dan mengubah propertiya supaya text-align pada "center"
+-->
+<!--
+	untuk masing-masing article dalam div#course, kita akan menunjuk secara spesifik
+	pada #course article,
+	tujuannya adalah menampilkan masing-masing article dalam bentuk kolom masing-masing
+	kita akan memberikan width pada masing-masing article sebesar 33.33% dengan 
+	padding 16px di ke-empat sisinya
+	width 33.33% berarti lebar masing-masing article hanya menempati wsepertiga dari
+	element induk/parent-nya, sehingga ke-tiganya dapat kita jejerkan dalam satu baris.
+
+	namun karena article merupakan block element, maka properti displaynya perlu
+	diubah menjadi "table-cell", nilai properti ini memperlakukan article seolah
+	kolom dalam baris tabel.
+-->
+
+<!-- 
+	kita perlu memberi nama class pada span yang menunjukkan nama pada div#about
+	tambahkan class "identitas" pada span tersebut, kemudian ubah properti color
+	pada .identitas menjadi "tomato" dan beri tag strong pada nama agar nama
+	mwnjadi dicetak tebal.
+	agar nama dan nim lebih menonjol, kita besarkan ukurannya sedikit, properti
+	font-size kita ubah menjadi 18px
+ -->
+ <!--
+	span yang di bawah header <h2> "hubungi saya" bertumpuk pada satu baris dan
+	menjadi sulit untuk dibaca, agar masing-masing span menempati satu baris,
+	properti display kita ubah menjadi block.
+	setelah itu, align semua tulisan pada div#about ke tengah
+ -->
+ 
+ <!--
+	 sepertinya jarak antar div dalam container terlalu dekat, maka kita akan memberi
+	 padding pada atas dan bawah div #course, #about, dan #contact sebesar 40px
+ -->
+
+<!--
+	rapikan bagian form :) validasi dan ingat placeholder
+-->
+
+ <!--
+	 footer akan diubah menjadi berwarna latar "royal blue" dan pargraph pada footer
+	 berwarna "azure"
+	 atur tinggi footer menjadi 120px, tengahkan paragraph, dan beri padding 
+	 pada sisi atas dan bawah sebesar 32px
+ -->
+
+<!--
+	kembali ke menu navigasi, agar menu navigasi lebih enak dilihat saat scroll
+	kita akan menambahkan warna latar putih transparan,
+	kita dapat menggunakan model RGBA, misalnya pada properti background-color
+	kita berikan nilai "rgba(255, 255, 255, 0.8)" yang berarti opacity dari warna
+	tersebut adalah 80%
+	setelah itu, agar garis bawah pada link tidak terlihat, properti text-decoration
+	akan kita beri nilai "none"
+	kemudian beri warna "#ff5800" pada linknya
+-->
+
+ <!--
+	 apabila ada yang janggal dalam design, perhatikan box model default 
+	 dan margin default pada body
+ -->
