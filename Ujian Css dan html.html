@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Ujian Mid Semester Pemrograman Web - 17412171</title>
+			<!--<link rel='stylesheet' type='text/css' href='styletest.css'>-->
+		<style>
+			body{
+			font-family:"century gothic", "segoe UI",Tahoma, Geneva;
+			margin:default;
+			box-model:default;
+		}
+		
+
+		.header{
+			background-color:rgba(255,255,255,0.8); 
+			opacity:80%;
+			text-decoration:none;
+			position:fixed;
+			top:0;
+			width:100%;
+			text-align:center;
+		}
+		
+
+		a{
+			color:#ff5800;
+		}
+		
+
+		.header ul{
+			margin:0;
+			padding:0;
+		}
+		
+
+		.header li{
+			list-style: none;
+			display: inline-block;
+			padding: 8px 16px 8px 16px;
+			/*
+			padding-left:16px;
+			padding-right:16px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			*/
+		}
+		
+
+		
+
+		.header a{	
+			margin:0;
+			padding:0;
+		}
+		
+
+		.container {
+			margin-left:auto;
+			margin-right:auto;
+			max-width:840px;
+		}
+		
+
+		#hello{
+			height:480px;
+			background-color:deepskyblue;
+			height:100%;
+		
+
+		}
+		
+
+		.banner {
+			/* position:relative; */
+			/* Masalah : link ultertutup */
+		
+
+		}
+		
+
+		.banner hello{
+			overflow:hidden;
+			position:relative;
+		
+
+		}
+		
+
+		.banner small {
+			position:absolute;
+			left: 16px;
+			bottom: 16px;
+		}
+		
+
+		h1{
+			color:white;
+			background-color:black;
+			opacity:70%;
+		}
+		
+
+		.banner h1{
+			padding-top: 16px;
+			padding-bottom: 16px;
+			padding-left: 32px;
+			padding-right: 32px;
+			display: inline-block;
+			position: absolute;
+			padding-bottom: 60px; /*jarak position atau padding?? */
+		}
+		
+
+		
+
+		small{
+			color:ghostwhite;
+			z-index:10px; /* masih ga naik */
+		}
+		
+
+		#wrapper h2{ text-align:center;}
+		#course{ padding:40px 0px 40px 0px; }
+		
+
+		article{
+			width: 33.33%;
+			padding: 16px 16px 16px 16px;
+			display:table-cell;
+		}
+		
+
+		#about{ padding:40px 0px 40px 0px;}
+		
+
+		#about .identitas{
+			color:tomato;
+			font-size:18px;
+		}
+		
+
+		h2 .gpg{
+			display:block;
+		}
+		
+
+		#contact{padding:40px 0px 40px 0px;}
+		
+
+		
+
+		::placeholder{
+			color:green;
+			opacity:50%;
+		}
+		
+
+		footer{
+			background-color:royalblue;
+			height:120px;
+		
+
+		}
+		
+
+		footer p{
+			color:azure; 
+			padding:32px 0px 32px 0px;	
+			text-align:center;
+		}
+		
+
+		
+
+		</style>
+		</head>
+		<body>
+		
+
+			<nav class="header">
+				<ul>
+					<li><a href="#hello">hello</a></li>
+					<li><a href="#course">course</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#contact">contact</a></li>
+				</ul>
+			</nav>
+		
+
+			<div class="container" id="wrapper">
+				<div id="hello">
+					<div class="banner">
+					<img src="assets/banner.jpg" alt="gambar latar" style="width:500px;">
+					</div>
+					<h1>Ngoding itu gak susah</h1> 
+					<small>perlu dibiasakan saja</small>		
+				</div>
+		
+
+				<div id="course">
+					<h2>Course telah diselesaikan</h2>
+					<article>
+					<h3>machine learning</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis facere aut, at, distinctio nesciunt sequi delectus, quas molestiae nisi accusamus asperiores praesentium aperiam sint qui iusto facilis! Possimus, consectetur earum!</p>
+					<h3>predictive analysis</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus impedit quam eveniet. At reprehenderit animi vero, debitis consequatur in quam veritatis, ipsam praesentium, minus perferendis obcaecati? Ratione dolores fugit nam.</p> 
+					<h3>inclusive design pattern</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eos veritatis recusandae, vitae mollitia aspernatur quis nesciunt incidunt culpa explicabo accusamus asperiores reprehenderit, officiis quos deleniti unde illum aut suscipit?</p>		
+					</article>
+				</div>
+		
+
+				<div id="about">
+					<h2>Tentang Saya</h2>
+					<span class="identitas">
+					<strong>Anson Borneor Lindi</strong>, 17412133
+					</span>
+		
+
+					<p>Nama saya Vincent Glenis Chandra, saya lahir di Pontianak pada tanggal 9 maret 1999. 
+					Saya ada menjual kue yang tidak ada di Indonesia dan jika ingin m engetahuinya facebook:jimmy Liang
+					instagram:smile cake house. Dan saya punya kerja sampingan yaiu buat youtube(It's Real VgcVincent glenis chandra)
+					instagram :vincent.glenis.c</p>
+		
+
+					<h2 class="gpg">Hubungi Saya</h2>
+					<span>E-mail : vincent.chandra.vgcv@gmail.com</span>
+					<span>No. HP/WA : +83151188903</span>
+					<span>Alamat : Jl. Prof Dr.hamka</span>
+					<br>
+				</div>
+		
+
+				<div id="contact">	
+					<h2>Kirim Pesan ke saya</h2>
+					<form method="POST">
+						<label>Name:</label>
+						<input type="text" id="nama" name="nama" placeholder="Nama Anda"><br>
+						<label>E-Mail:</label>
+						<input type="text" id="email" name="email" placeholder="E-Mail Anda..."><br>
+						Message:<br>
+						<textarea type="textarea" id="message" name="message" placeholder="Pesan Anda..."></textarea><br>
+						<button type="button">kirim</button>
+					</form>
+				</div>
+		
+
+			</div>
+		
+
+			<footer>
+			<p>Copyright hari ini, sebuah pencapaian kecil</p>
+			</footer>
+		</body>
+		</html>
+		
